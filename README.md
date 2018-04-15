@@ -9,3 +9,4 @@
 5.  使用`mobx`作为全局的状态管理工具
 6.  将 routes 集中进行`react-router@4`路由配制，可以更加方便的添加异步路由
 7.  添加了自定义的`provider`
+    <!-- "homepage": "" -->

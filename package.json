@@ -96,10 +96,5 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": {
-    "/tpaicwebservice": {
-      "target": "http://test.tpis.tpaic.com:7070",
-      "changeOrigin": true
-    }
-  }
+  "proxy": {}
 }
