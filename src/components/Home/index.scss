@@ -1,0 +1,61 @@
+.home-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  img {
+    position: relative;
+    z-index: 1;
+    -webkit-user-select: none;
+  }
+
+  img:hover ~ .refresh-btn {
+    display: block;
+  }
+
+  .refresh-btn:hover {
+    display: block;
+  }
+
+  .refresh-btn {
+    -webkit-user-select: none;
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    margin-left: -44px;
+    margin-top: -44px;
+    font-size: 40px;
+    color: #fff;
+    width: 88px;
+    line-height: 88px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .loading {
+    &.show {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    background: url("../../assets/img/loading-balls.svg") 50% 50% no-repeat;
+    background-color: #50cf77;
+    background-size: 64px 64px;
+    &::after {
+      content: "Loading...";
+      position: absolute;
+      font-size: 4rem;
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      color: #fff;
+      margin-top: -2em;
+    }
+  }
+}
